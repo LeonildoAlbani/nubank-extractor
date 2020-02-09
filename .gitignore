@@ -1,4 +1,5 @@
 leonildo.*
 gisieli.*
-nodemodules
+node_modules
 .idea
+package-lock.json

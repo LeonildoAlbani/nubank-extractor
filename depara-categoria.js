@@ -46,13 +46,17 @@ module.exports = (descricao)=>{
             return 'Pagamento Cartão';
     }
     if (descricao.startsWith("Picpay")) {
-    	if (descricao.endsWith("Leonildoa") || descricao.endsWith("Gisieliol") || descricao.endsWith("Pgtoconta")) {
+        if (descricao.endsWith("Leonildoa") || descricao.endsWith("Leoni") 
+            || descricao.endsWith("Gisieliol") || descricao.endsWith("Gisie") 
+            || descricao.endsWith("Pgtoconta") || descricao.endsWith("Pagam")) {
     		return 'Des Var Picpay';
     	} else if (descricao.endsWith("Steam")) {
     		return 'Des Fix Serviços Online';
-    	} else if (descricao.endsWith("Recargace")) {
+    	} else if (descricao.endsWith("Recargace") || descricao.endsWith("Recar")) {
     		return 'Des Var Celular';
     	}
+    } else if (descricao.endsWith("Osorveteiro")) {
+        return 'Des Adc Lazer Restaurantes/bares';
     }
     return descricao+' NÃO CATEGORIZADO';
     
