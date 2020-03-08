@@ -14,6 +14,7 @@ module.exports = (descricao)=>{
         case 'Italo Supermercados':
         case 'Pag*Italosupermercado':
         case 'No Ponto Supermercado':
+        case 'No Ponto Supermecado':
         case 'No Ponto Supermercados':
         case 'Shb Comercio Industr':
         case 'Brf':
@@ -29,6 +30,7 @@ module.exports = (descricao)=>{
             return 'Des Fix Academia';
         case 'Posto P Sao Francisco':
         case 'Posto Delta Dois Vizin':
+        case 'Posto Delta Francisco':
         case 'Posto Pioneiro':
         case 'Posto guarapuava':
             return 'Des Var Combustível';
@@ -44,6 +46,10 @@ module.exports = (descricao)=>{
             return 'Des Fix Serviços Online';
         case 'Pagamento recebido':
             return 'Pagamento Cartão';
+        case 'Apple.Com/Bi':
+            return 'Des Fix Serviços Online';
+        case 'Unnik Centro Odontolog':
+            return 'Des Ext Dentista';
     }
     if (descricao.startsWith("Picpay")) {
         if (descricao.endsWith("Leonildoa") || descricao.endsWith("Leoni") 
@@ -57,6 +63,8 @@ module.exports = (descricao)=>{
     	}
     } else if (descricao.endsWith("Osorveteiro")) {
         return 'Des Adc Lazer Restaurantes/bares';
+    } else if (descricao.includes('Actio Club')) {
+        return 'Des Fix Academia';
     }
     return descricao+' NÃO CATEGORIZADO';
     
