@@ -38,7 +38,7 @@ module.exports = (descricao)=>{
             return 'Des Ext Casa';
         case 'Farmacia Sao Joao Sul':
         case 'Thiago Farma Center':
-        case 'Melotto & Cichella':
+        case 'Farmacia Mais Saud':
             return 'Des Ext Medicamentos';
         case 'Thermas Sulina':
             return 'Des Adc Lazer';
@@ -65,6 +65,10 @@ module.exports = (descricao)=>{
         return 'Des Adc Lazer Restaurantes/bares';
     } else if (descricao.includes('Actio Club')) {
         return 'Des Fix Academia';
+    } else if (descricao.includes('Alura ')) {
+        return 'Des Fix Curso'
+    } else if (descricao.includes('Melotto & Cichella')) {
+        return 'Des Ext Medicamentos';
     }
     return descricao+' NÃO CATEGORIZADO';
     
