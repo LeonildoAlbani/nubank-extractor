@@ -39,6 +39,7 @@ module.exports = (descricao)=>{
         case 'Farmacia Sao Joao Sul':
         case 'Thiago Farma Center':
         case 'Melotto & Cichella':
+        case 'Melotto & Cichella -':
             return 'Des Ext Medicamentos';
         case 'Thermas Sulina':
             return 'Des Adc Lazer';
