@@ -24,6 +24,7 @@ module.exports = (descricao)=>{
         case 'Supermercado Brasao':
         case 'Super Muffato Comercia':
         case 'Supermercado Rodrigues':
+        case 'Ebanx *Cestou':
             return 'Des Var Supermercado';
         case 'Academia Boa Forma e S':
         case 'Academia Sport Fit':
@@ -45,13 +46,14 @@ module.exports = (descricao)=>{
         case 'Thermas Sulina':
             return 'Des Adc Lazer';
         case 'Itunes.Com/Bill':
+        case 'Apple.Com/Bi':
             return 'Des Fix Serviços Online';
         case 'Pagamento recebido':
             return 'Pagamento Cartão';
-        case 'Apple.Com/Bi':
-            return 'Des Fix Serviços Online';
         case 'Unnik Centro Odontolog':
             return 'Des Ext Dentista';
+        case 'Turatto Auto Center':
+            return 'Des Ext Carro';
     }
     if (descricao.startsWith("Picpay")) {
         if (descricao.endsWith("Leonildoa") || descricao.endsWith("Leoni") 
