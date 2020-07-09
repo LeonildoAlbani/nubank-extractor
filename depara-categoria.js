@@ -12,6 +12,7 @@ module.exports = (descricao)=>{
         case 'IOF de "Amazon Web Services"':
             return 'Des Var Onlyus';
         case 'Italo Supermercados':
+        case 'Center Vizi Supermerca':
         case 'Pag*Italosupermercado':
         case 'No Ponto Supermercado':
         case 'No Ponto Supermecado':
@@ -47,6 +48,7 @@ module.exports = (descricao)=>{
             return 'Des Adc Lazer';
         case 'Itunes.Com/Bill':
         case 'Apple.Com/Bi':
+        case 'Apple.Com/Bill':
             return 'Des Fix Serviços Online';
         case 'Pagamento recebido':
             return 'Pagamento Cartão';
@@ -56,13 +58,13 @@ module.exports = (descricao)=>{
             return 'Des Ext Carro';
     }
     if (descricao.startsWith("Picpay")) {
-        if (descricao.endsWith("Leonildoa") || descricao.endsWith("Leoni") 
-            || descricao.endsWith("Gisieliol") || descricao.endsWith("Gisie") 
-            || descricao.endsWith("Pgtoconta") || descricao.endsWith("Pagam")) {
+        if (descricao.includes("Leonildoa") || descricao.includes("Leoni") 
+            || descricao.includes("Gisieliol") || descricao.includes("Gisie") 
+            || descricao.includes("Pgtoconta") || descricao.includes("Pagam")) {
     		return 'Des Var Picpay';
-    	} else if (descricao.endsWith("Steam")) {
+    	} else if (descricao.includes("Steam")) {
     		return 'Des Fix Serviços Online';
-    	} else if (descricao.endsWith("Recargace") || descricao.endsWith("Recar")) {
+    	} else if (descricao.includes("Recar")) {
     		return 'Des Var Celular';
     	}
     } else if (descricao.endsWith("Osorveteiro")) {
