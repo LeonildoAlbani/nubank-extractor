@@ -26,6 +26,8 @@ module.exports = (descricao)=>{
         case 'Super Muffato Comercia':
         case 'Supermercado Rodrigues':
         case 'Ebanx *Cestou':
+        case 'Mercado Felini':
+        case 'Manfroi Supermercados':
             return 'Des Var Supermercado';
         case 'Academia Boa Forma e S':
         case 'Academia Sport Fit':
