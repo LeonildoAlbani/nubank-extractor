@@ -5,6 +5,7 @@ module.exports = (descricao)=>{
         case 'Trovao Burger e Beer':
         case 'Officina Bar':
         case 'Zazen Gastrobar':
+        case 'Soberano\' S Burger':
             return 'Des Adc Lazer Restaurantes/bares';
         case 'Churrascaria Querencia':
             return 'Des Var Alimentação Restaurantes';
