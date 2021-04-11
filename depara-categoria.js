@@ -46,19 +46,21 @@ module.exports = (descricao)=>{
         case 'Melotto & Cichella':
         case 'Melotto & Cichella -':
         case 'Farmacia Mais Saud':
+        case 'Poupalar Dois Vizinhos':
             return 'Des Ext Medicamentos';
         case 'Thermas Sulina':
             return 'Des Adc Lazer';
         case 'Itunes.Com/Bill':
         case 'Apple.Com/Bi':
         case 'Apple.Com/Bill':
+        case 'Amazonprimebr':
             return 'Des Fix Serviços Online';
         case 'Pagamento recebido':
             return 'Pagamento Cartão';
         case 'Unnik Centro Odontolog':
             return 'Des Ext Dentista';
-        case 'Turatto Auto Center':
-            return 'Des Ext Carro';
+        case 'Brothers Barbearia':
+            return 'Des Var Cabeleireiro/Beleza'
     }
     if (descricao.startsWith("Picpay")) {
         if (descricao.includes("Leonildoa") || descricao.includes("Leoni") 
@@ -74,10 +76,12 @@ module.exports = (descricao)=>{
         return 'Des Adc Lazer Restaurantes/bares';
     } else if (descricao.includes('Actio Club')) {
         return 'Des Fix Academia';
-    } else if (descricao.includes('Alura ')) {
+    } else if (descricao.includes('Alura ') || descricao.includes('Wise Up Online')) {
         return 'Des Fix Curso'
     } else if (descricao.includes('Melotto & Cichella')) {
         return 'Des Ext Medicamentos';
+    } else if (descricao.includes('Turatto Auto Center') || descricao.includes('Auto Pecas Turatto')) {
+        return 'Des Ext Carro';
     }
     return descricao+' NÃO CATEGORIZADO';
     
