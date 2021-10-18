@@ -6,6 +6,8 @@ module.exports = (descricao)=>{
         case 'Officina Bar':
         case 'Zazen Gastrobar':
         case 'Soberano\' S Burger':
+        case 'Condado Food Park':
+        case 'Milk Creamery':
             return 'Des Adc Lazer Restaurantes/bares';
         case 'Churrascaria Querencia':
             return 'Des Var Alimentação Restaurantes';
@@ -29,9 +31,12 @@ module.exports = (descricao)=>{
         case 'Ebanx *Cestou':
         case 'Mercado Felini':
         case 'Manfroi Supermercados':
+        case 'Italo Supermercados Dv':
+        case 'Italo Supermercados Cv':
             return 'Des Var Supermercado';
         case 'Academia Boa Forma e S':
         case 'Academia Sport Fit':
+        case 'Boa Forma':
             return 'Des Fix Academia';
         case 'Posto P Sao Francisco':
         case 'Posto Delta Dois Vizin':
@@ -54,6 +59,7 @@ module.exports = (descricao)=>{
         case 'Apple.Com/Bi':
         case 'Apple.Com/Bill':
         case 'Amazonprimebr':
+        case 'Ebanx*Spotify':
             return 'Des Fix Serviços Online';
         case 'Pagamento recebido':
             return 'Pagamento Cartão';
@@ -65,7 +71,8 @@ module.exports = (descricao)=>{
     if (descricao.startsWith("Picpay")) {
         if (descricao.includes("Leonildoa") || descricao.includes("Leoni") 
             || descricao.includes("Gisieliol") || descricao.includes("Gisie") 
-            || descricao.includes("Pgtoconta") || descricao.includes("Pagam")) {
+            || descricao.includes("Pgtoconta") || descricao.includes("Pagam")
+            || descricao.includes("Nupagamentos")) {
     		return 'Des Var Picpay';
     	} else if (descricao.includes("Steam")) {
     		return 'Des Fix Serviços Online';
@@ -78,10 +85,14 @@ module.exports = (descricao)=>{
         return 'Des Fix Academia';
     } else if (descricao.includes('Alura ') || descricao.includes('Wise Up Online')) {
         return 'Des Fix Curso'
-    } else if (descricao.includes('Melotto & Cichella')) {
+    } else if (descricao.includes('Melotto & Cichella') || descricao.includes('Farmacia e Drogaria')) {
         return 'Des Ext Medicamentos';
     } else if (descricao.includes('Turatto Auto Center') || descricao.includes('Auto Pecas Turatto')) {
         return 'Des Ext Carro';
+    } else if (descricao.includes('Mercadolivre')) {
+        return 'Des Var Mercado Livre';
+    } else if (descricao.includes('hbomaxcom')) {
+        return 'Des Fix Serviços Online';
     }
     return descricao+' NÃO CATEGORIZADO';
     
