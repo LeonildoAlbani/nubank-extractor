@@ -8,6 +8,11 @@ module.exports = (descricao)=>{
         case 'Soberano\' S Burger':
         case 'Condado Food Park':
         case 'Milk Creamery':
+        case 'Xarotto Hamburgueria':
+        case 'Seu Giocondo Fogo e Ba':
+        case 'Iris Pay':
+        case 'R M Paini e Cia':
+        case 'Fronttoni':
             return 'Des Adc Lazer Restaurantes/bares';
         case 'Churrascaria Querencia':
             return 'Des Var Alimentação Restaurantes';
@@ -44,7 +49,7 @@ module.exports = (descricao)=>{
         case 'Posto Pioneiro':
         case 'Posto guarapuava':
             return 'Des Var Combustível';
-        case 'Brastemp':
+        case 'Geifi Materiais de Co':
             return 'Des Ext Casa';
         case 'Farmacia Sao Joao Sul':
         case 'Thiago Farma Center':
@@ -52,6 +57,7 @@ module.exports = (descricao)=>{
         case 'Melotto & Cichella -':
         case 'Farmacia Mais Saud':
         case 'Poupalar Dois Vizinhos':
+        case 'Sao Joao Farmacias':
             return 'Des Ext Medicamentos';
         case 'Thermas Sulina':
             return 'Des Adc Lazer';
@@ -79,7 +85,11 @@ module.exports = (descricao)=>{
     	} else if (descricao.includes("Recar")) {
     		return 'Des Var Celular';
     	}
-    } else if (descricao.endsWith("Osorveteiro")) {
+    } else if (descricao.startsWith("Tim*") || descricao.startsWith("Tim Recarga*")
+            || descricao.includes("Recarga de celular")) {
+        return 'Des Var Celular';
+    } else if (descricao.endsWith("Osorveteiro") || descricao.startsWith('Aiqfome*')
+            || descricao.includes('Katianesubirai') || descricao.includes('Katiane Subirai')) {
         return 'Des Adc Lazer Restaurantes/bares';
     } else if (descricao.includes('Actio Club')) {
         return 'Des Fix Academia';
@@ -93,6 +103,8 @@ module.exports = (descricao)=>{
         return 'Des Var Mercado Livre';
     } else if (descricao.includes('hbomaxcom')) {
         return 'Des Fix Serviços Online';
+    } else if (descricao.startsWith('Brastemp')) {
+        return 'Des Ext Casa';
     }
     return descricao+' NÃO CATEGORIZADO';
     
